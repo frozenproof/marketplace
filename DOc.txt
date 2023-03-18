@@ -1,0 +1,101 @@
+
+
+
+
+Bài tập lớn Lập trình trực quan: Quản lý sàn chứng khoán
+
+1. Danh sách các bảng cần quản lý
+	1.1 Bảng người dùng
+		1.1.1 Thành phần bảng 
+			1.1.1.1 Tên người dùng
+			1.1.1.2 Số điện thoại liên lạc
+			1.1.1.3 Mã tài khoản (Khóa chính)
+			1.1.1.4 Địa chỉ 
+			1.1.1.5 Số CMND
+			1.1.1.6 Ngày cấp số CMND
+			1.1.1.7 Nơi cấp CMND
+			1.1.1.8 Số tiền còn trong tài khoản
+			1.1.1.9 Tổng số tiền nợ
+			1.1.1.10 Tên tài khoản
+			1.1.1.11 Mật khẩu
+		1.1.2 Ước tính nghiệp vụ riêng cho khách hàng
+			1.1.2.1 Tìm thông tin cơ bản về người chơi
+			1.1.2.2 Lấy ra các thông tin cần và truyền vào form mua bán
+			1.1.2.3 Bảng tần suất và biểu đồ mua bán các cổ phiếu
+			1.1.2.4 Liệt kê số tiền nợ và lý do nợ
+			1.1.2.5 Trả tiền nợ
+			1.1.2.6 Rút tiền
+			1.1.2.7 Nạp tiền
+			1.1.2.8 Vay tiền
+			1.1.2.9 Chuyển tiền
+			1.1.2.10 Đăng nhập và màn hình thông tin riêng ( User Control )
+			1.1.2.11 Vẽ biểu đồ số lần đăng nhập
+	
+	1.2 Bảng công ty chứng khoán
+		1.2.1 Thành phần bảng 
+			1.2.1.1 Tên công ty
+			1.2.1.2 Địa chỉ công ty
+			1.2.1.3 Mã kinh doanh niêm yết (Khóa chính)
+			1.2.1.4 Số điện thoại liên hệ
+			1.2.1.5 Số cổ phần
+			1.2.1.6 Giá hiện tại
+			1.2.1.7 Giá tham chiếu ( Mức giá từ lần đóng cửa gần nhất )
+			1.2.1.8 Giá trần ( Mức + 10% so với giá tham chiếu )
+			1.2.1.9 Giá sàn ( Mức - 10% so với giá tham chiếu )
+			1.2.1.10 Giá mua tốt nhất
+			1.2.1.11 Số lượng cần mua để được giá tốt nhất
+			1.2.1.12 Mã Tài khoản chủ công ty ( Bảng người dùng )
+			1.2.1.13 Tổng số cổ phần 
+			1.2.1.13 Số tiền nợ
+		1.2.2 Ước tính nghiệp vụ dành riêng cho công ty
+			1.2.2.1 Phát hành thêm cổ phiếu
+			1.2.2.2 Đổi thông tin cơ bản
+			1.2.2.3 Màn hình thông tin riêng ( User Control )
+			1.2.2.4 Giảm số vốn điều lệ
+			1.2.2.5 Vẽ biểu đồ tăng trưởng giá theo quý
+		
+	1.3 Bảng lịch sử giao dịch mua bán
+		1.3.1 Thành phần bảng
+			1.3.1.1 Mã giao dịch (Khóa chính)
+			1.3.1.2 Ghi chú giao dịch (Sử dụng dropbox để kiểm soát các lựa chọn giao dịch)
+			1.3.1.3 Số tiền giao dịch
+			1.3.1.4 Ngày giao dịch
+			1.3.1.5 Mã người dùng ( người khởi tạo giao dịch )
+			1.3.1.6 Mã người dùng ( công ty hoặc người nhận )
+			1.3.1.7 Số cổ phiếu giao dịch
+			1.3.1.8 Thời gian đợi trước khi giao dịch được thực hiện.
+			1.3.1.9 Phí giao dịch
+		1.3.2 Ước tính nghiệp vụ của lịch sử giao dịch	
+			1.3.2.1 Kiểm tra lại lịch sử giao dịch
+			1.3.2.2 Thực hiện giao dịch và mua bán
+			1.3.2.3 Vẽ biểu đồ hình tròn thể hiện phần trăm giá trị trong thị trường 
+	
+	1.4. Bảng niêm yết giá
+		1.3.1 Thành phần bảng
+			1.3.1.1 -> 1.3.1.11 : Trích xuất từ bảng của công ty
+		1.3.2 Ước tính nghiệp vụ
+			1.3.2.1 Lấy thông tin về các công ty 
+			1.3.2.2 Vẽ biểu đồ số lượng cổ phiếu và giá
+	
+2. Danh sách nghiệp vụ thực tế User Control
+	2.1 User Control hiển thị thông tin đăng nhập
+	
+	
+3. Danh sách nghiệp vụ thực tế Form
+	3.1 Form đăng nhập tài khoản người dùng ( Còn thiếu việc đổi và chuyển thẳng vào Form hiển thị công ty )
+	3.2 Form hiển thị biểu đồ
+	3.3 Form tra cứu
+	3.4 Form đăng ký giao dịch
+	3.5 Form thay đổi thông tin người dùng 
+	3.6 Form thể hiện lại thông tin từ đăng ký giao dịch và xác nhận giao dịch
+	3.7 Form lập công ty
+	3.8 Form đăng ký tài khoản người dùng
+	3.9 Form hiển thị thông tin hiện tại của các công ty
+	
+4. Danh sách liên hệ các form
+	4.1 Form đăng nhập -> Form đăng ký -> Form đăng nhập 
+	
+	
+	meot                                                                                                meot                                                                                                	0999000003	Địa chỉ	9234834892	2020-09-11 00:00:00.0000000	Hà Nội    	93045934	0	meo             	123456                          	Nam	0         
+	
+	select * from sangiaodich.dbo.nguoidung where [Tên tài khoản] = meo

@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C42DD40-A6C4-4008-8448-E9D1FF6389C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BTLON</RootNamespace>
+    <AssemblyName>BTLON</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Control.Draggable, Version=1.0.5049.269, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Control.Draggable.1.0.5049.269\lib\net35-Client\Control.Draggable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BT_LON_0.0\Forms\Lịch_sử_giao_dịch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Lịch_sử_giao_dịch.Designer.cs">
+      <DependentUpon>Lịch_sử_giao_dịch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Thay_đổi_thông_tin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Thay_đổi_thông_tin.Designer.cs">
+      <DependentUpon>Thay_đổi_thông_tin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Vẽ_biểu_đồ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Vẽ_biểu_đồ.Designer.cs">
+      <DependentUpon>Vẽ_biểu_đồ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Giao_dịch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Giao_dịch.Designer.cs">
+      <DependentUpon>Giao_dịch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Màn_hình_tổng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Màn_hình_tổng.Designer.cs">
+      <DependentUpon>Màn_hình_tổng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Hiển_Thị_Các_Công_Ty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Hiển_Thị_Các_Công_Ty.Designer.cs">
+      <DependentUpon>Hiển_Thị_Các_Công_Ty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Quên_mật_khẩu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Quên_mật_khẩu.Designer.cs">
+      <DependentUpon>Quên_mật_khẩu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Đăng_ký.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Đăng_ký.Designer.cs">
+      <DependentUpon>Đăng_ký.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Khung_thông_báo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Khung_thông_báo.Designer.cs">
+      <DependentUpon>Khung_thông_báo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kho_biến_tổng.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype_Forms\CommonFormFunctions.cs" />
+    <Compile Include="Prototype_Forms\ChildForms\Default_Home_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Default_Home_Screen.Designer.cs">
+      <DependentUpon>Default_Home_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Forgot_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Forgot_Password.Designer.cs">
+      <DependentUpon>Forgot_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Giao_dich\Tien\ChuyenTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Giao_dich\Tien\ChuyenTien.Designer.cs">
+      <DependentUpon>ChuyenTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Giao_dich\Tien\NapTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Giao_dich\Tien\NapTien.Designer.cs">
+      <DependentUpon>NapTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Giao_dich\Tien\RutTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Giao_dich\Tien\RutTien.Designer.cs">
+      <DependentUpon>RutTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Graph\Graphes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Graph\Graphes.Designer.cs">
+      <DependentUpon>Graphes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Lich_su\Lich_su.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Lich_su\Lich_su.Designer.cs">
+      <DependentUpon>Lich_su.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Theo_doi\Models\ICtyRepositary.cs" />
+    <Compile Include="Prototype_Forms\ChildForms\Theo_doi\Models\CtyModel.cs" />
+    <Compile Include="Prototype_Forms\ChildForms\Theo_doi\TheoDoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Theo_doi\TheoDoi.Designer.cs">
+      <DependentUpon>TheoDoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Theo_doi\Views\ICtyView.cs" />
+    <Compile Include="Prototype_Forms\ChildForms\Giao_dich\ChungKhoan\CompanyView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Giao_dich\ChungKhoan\CompanyView.Designer.cs">
+      <DependentUpon>CompanyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Đăng_Nhập.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Đăng_Nhập.Designer.cs">
+      <DependentUpon>Đăng_Nhập.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype_Forms\CustomDropDownMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\DatabaseConnection\DBC.cs" />
+    <Compile Include="Prototype_Forms\Forms\Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\Forms\Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype_Forms\Forms\NewsParticles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\Forms\NewsParticles.Designer.cs">
+      <DependentUpon>NewsParticles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype_Forms\Forms\PasswordChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\Forms\PasswordChange.Designer.cs">
+      <DependentUpon>PasswordChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype_Forms\Forms\temp_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\Forms\temp_form.Designer.cs">
+      <DependentUpon>temp_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype_Forms\Forms\Thử_nghiệm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\Forms\Thử_nghiệm.Designer.cs">
+      <DependentUpon>Thử_nghiệm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype_Forms\GlobalVariable.cs" />
+    <Compile Include="Prototype_Forms\MenuColorTable.cs" />
+    <Compile Include="Prototype_Forms\MenuRenderer.cs" />
+    <Compile Include="Prototype_Forms\ChildForms\Đăng_Ký.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype_Forms\ChildForms\Đăng_Ký.Designer.cs">
+      <DependentUpon>Đăng_Ký.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sangiaodichDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sangiaodichDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SQL_Command_Testing_Pop_Up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SQL_Command_Testing_Pop_Up.Designer.cs">
+      <DependentUpon>SQL_Command_Testing_Pop_Up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQL_Command_Testing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SQL_Command_Testing.Designer.cs">
+      <DependentUpon>SQL_Command_Testing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Log_In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BT_LON_0.0\Forms\Log_In.Designer.cs">
+      <DependentUpon>Log_In.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQL_CONNECT\Dummy_-00010000.cs" />
+    <Compile Include="SQL_CONNECT\External_SQL_Data_Bridge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SQL_CONNECT\Portal.cs" />
+    <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="BT_LON_0.0\Forms\Giao_dịch.resx">
+      <DependentUpon>Giao_dịch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BT_LON_0.0\Forms\Hiển_Thị_Các_Công_Ty.resx">
+      <DependentUpon>Hiển_Thị_Các_Công_Ty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BT_LON_0.0\Forms\Lịch_sử_giao_dịch.resx">
+      <DependentUpon>Lịch_sử_giao_dịch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BT_LON_0.0\Forms\Màn_hình_tổng.resx">
+      <DependentUpon>Màn_hình_tổng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BT_LON_0.0\Forms\Quên_mật_khẩu.resx">
+      <DependentUpon>Quên_mật_khẩu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BT_LON_0.0\Forms\Thay_đổi_thông_tin.resx">
+      <DependentUpon>Thay_đổi_thông_tin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BT_LON_0.0\Forms\Vẽ_biểu_đồ.resx">
+      <DependentUpon>Vẽ_biểu_đồ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BT_LON_0.0\Forms\Đăng_ký.resx">
+      <DependentUpon>Đăng_ký.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Khung_thông_báo.resx">
+      <DependentUpon>Khung_thông_báo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype_Forms\ChildForms\Default_Home_Screen.resx">
+      <DependentUpon>Default_Home_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype_Forms\ChildForms\Forgot_Password.resx">
+      <DependentUpon>Forgot_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype_Forms\ChildForms\Giao_dich\Tien\ChuyenTien.resx">
+      <DependentUpon>ChuyenTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype_Forms\ChildForms\Giao_dich\Tien\NapTien.resx">
+      <DependentUpon>NapTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype_Forms\ChildForms\Giao_dich\Tien\RutTien.resx">
+      <DependentUpon>RutTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype_Forms\ChildForms\Graph\Graphes.resx">
+      <DependentUpon>Graphes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype_Forms\ChildForms\Lich_su\Lich_su.resx">
+      <DependentUpon>Lich_su.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype_Forms\ChildForms\Theo_doi\TheoDoi.resx">
+      <DependentUpon>TheoDoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype_Forms\ChildForms\Giao_dich\ChungKhoan\CompanyView.resx">
+      <DependentUpon>CompanyView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype_Forms\ChildForms\Đăng_Ký.resx">
+      <DependentUpon>Đăng_Ký.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype_Forms\ChildForms\Đăng_Nhập.resx">
+      <DependentUpon>Đăng_Nhập.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype_Forms\Forms\Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype_Forms\Forms\NewsParticles.resx">
+      <DependentUpon>NewsParticles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype_Forms\Forms\PasswordChange.resx">
+      <DependentUpon>PasswordChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype_Forms\Forms\temp_form.resx">
+      <DependentUpon>temp_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype_Forms\Forms\Thử_nghiệm.resx">
+      <DependentUpon>Thử_nghiệm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQL_Command_Testing.resx">
+      <DependentUpon>SQL_Command_Testing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BT_LON_0.0\Forms\Log_In.resx">
+      <DependentUpon>Log_In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQL_Command_Testing_Pop_Up.resx">
+      <DependentUpon>SQL_Command_Testing_Pop_Up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQL_CONNECT\External_SQL_Data_Bridge.resx">
+      <DependentUpon>External_SQL_Data_Bridge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="sangiaodichDataSet.xsc">
+      <DependentUpon>sangiaodichDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sangiaodichDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sangiaodichDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sangiaodichDataSet.xss">
+      <DependentUpon>sangiaodichDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BT_LON_0.1\Form\" />
+    <Folder Include="BT_LON_0.1\Hàm\" />
+    <Folder Include="Prototype_Forms\ChildForms\Theo_doi\Presenters\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bill-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-minimize-window-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-maximize-window-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-dollar-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat_looking_at_da-sky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-no-background2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-transaction-approved-64 %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-transaction-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-total-sales-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-billing-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-dollar-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-investment-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-request-money-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-menu-male-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-key-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-account-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-enter-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chevron-left-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chevron-right-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-synchronize-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-more-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-user-male-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tax-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-initiate-money-transfer-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-dollar-642.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-money-transfer-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-phone-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-address-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-tag-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-gender-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-forgot-password-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-time-machine-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-reset-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-find-user-male-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-in-progress-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-done-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-done-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-profit-analysis-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-in-progress-641.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
